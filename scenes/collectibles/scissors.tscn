@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7d2drpxsg256"]
+
+[ext_resource type="PackedScene" uid="uid://bfkq08yx1evak" path="res://scenes/collectibles/collectible.tscn" id="1_ucctx"]
+[ext_resource type="Texture2D" uid="uid://dvybcqcv0152i" path="res://assets/scissors.png" id="2_osiq6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bu7tw"]
+size = Vector2(23, 47)
+
+[node name="Collectible" instance=ExtResource("1_ucctx")]
+grow = -10
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_osiq6")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-0.5, -2.5)
+shape = SubResource("RectangleShape2D_bu7tw")

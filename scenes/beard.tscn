@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://8huuxr8ea3xb"]
+
+[ext_resource type="Texture2D" uid="uid://ciwxjxvxvr1kc" path="res://assets/beard.png" id="1_l6iq5"]
+[ext_resource type="Script" path="res://scripts/beard.gd" id="2_varuo"]
+
+[sub_resource type="Curve" id="Curve_5ytuk"]
+_data = [Vector2(0, 0.807739), 0.0, -0.726906, 0, 0, Vector2(0.106407, 0.705024), 0.414335, 0.414335, 0, 0, Vector2(0.181922, 0.807739), 0.0, 0.0, 0, 0, Vector2(0.284897, 0.715559), 0.0, 0.0, 0, 0, Vector2(0.37643, 0.799838), 0.0, 0.0, 0, 0, Vector2(0.473684, 0.697123), -0.447584, -0.447584, 0, 0, Vector2(0.553776, 0.841977), -0.642382, -0.642382, 0, 0, Vector2(0.646453, 0.678687), -0.626374, -0.626374, 0, 0, Vector2(0.73341, 0.826175), 0.0639401, 0.0639401, 0, 0, Vector2(0.855835, 0.720827), 0.121151, 0.121151, 0, 0, Vector2(1, 0.997366), 0.426271, 0.0, 0, 0]
+point_count = 11
+
+[node name="Beard" type="Line2D"]
+texture_repeat = 3
+width = 24.0
+width_curve = SubResource("Curve_5ytuk")
+texture = ExtResource("1_l6iq5")
+texture_mode = 1
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+script = ExtResource("2_varuo")

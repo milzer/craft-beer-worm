@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq3khp4x2vj0r"]
+
+[ext_resource type="PackedScene" uid="uid://bfkq08yx1evak" path="res://scenes/collectibles/collectible.tscn" id="1_e7blx"]
+[ext_resource type="Texture2D" uid="uid://digxhkc78tbdi" path="res://assets/can.png" id="2_ifmav"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lr73j"]
+size = Vector2(28, 48)
+
+[node name="Collectible" instance=ExtResource("1_e7blx")]
+alcohol = 1
+grow = 1
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_ifmav")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_lr73j")

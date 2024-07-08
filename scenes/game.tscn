@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4fgovmemkyup"]
+
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_0kpcn"]
+[ext_resource type="FontFile" uid="uid://cbjmll071mdwq" path="res://assets/Kenney Pixel.ttf" id="2_uv5yl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7uj7r"]
+font = ExtResource("2_uv5yl")
+font_size = 32
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_0kpcn")
+
+[node name="CollectibleTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="StatusLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_7uj7r")
+
+[connection signal="timeout" from="CollectibleTimer" to="." method="_on_timer_timeout"]

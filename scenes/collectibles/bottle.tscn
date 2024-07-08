@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://csy2kp8cumjsq"]
+
+[ext_resource type="PackedScene" uid="uid://bfkq08yx1evak" path="res://scenes/collectibles/collectible.tscn" id="1_a1c5h"]
+[ext_resource type="Texture2D" uid="uid://bnx65nd1wwruo" path="res://assets/bottle.png" id="2_l46gl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_06rmn"]
+height = 64.0
+
+[node name="Collectible" instance=ExtResource("1_a1c5h")]
+points = 2
+alcohol = 1
+grow = 1
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_l46gl")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CapsuleShape2D_06rmn")
