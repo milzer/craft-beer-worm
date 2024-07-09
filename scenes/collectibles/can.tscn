@@ -14,8 +14,9 @@
 size = Vector2(28, 48)
 
 [node name="Collectible" instance=ExtResource("1_e7blx")]
+points = 1
 alcohol = 1
-grow = 1
+grow = 2
 sounds = Array[AudioStream]([ExtResource("2_8svwr"), ExtResource("3_np21u"), ExtResource("4_5a8ht"), ExtResource("5_yn3o4"), ExtResource("6_tpyvf"), ExtResource("7_dqwej"), ExtResource("8_4vv4r")])
 
 [node name="Sprite2D" parent="." index="0"]

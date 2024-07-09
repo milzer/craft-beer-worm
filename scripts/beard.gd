@@ -94,5 +94,7 @@ func _physics_process(_delta: float) -> void:
                 self_collision.emit()
 
 func update(amount: int) -> void:
-    beard_length = max(2, beard_length + amount)
-
+    if amount < 0:
+        beard_length = round(beard_length / 2.0) + 1
+    else:
+        beard_length += amount

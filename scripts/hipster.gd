@@ -63,6 +63,6 @@ func _on_beard_self_collision() -> void:
 func collected(pts: int, alc: int, grow_amount: int) -> void:
     points = max(0, points + pts)
     alcohol = max(0, alcohol + alc)
-    beard.update(grow_amount * 20)
+    beard.update(grow_amount * 10)
 
     points_update.emit(points)

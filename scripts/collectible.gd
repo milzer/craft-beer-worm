@@ -6,7 +6,7 @@ signal collected(points: int, alcohol: int, grow: int)
 @export var points: int
 @export var alcohol: int
 @export var grow: int
-@export var lifetime: float = 5.0
+@export var lifetime: float = 10.0
 @export var sounds: Array[AudioStream]
 
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D

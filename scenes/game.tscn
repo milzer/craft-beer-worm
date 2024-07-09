@@ -11,7 +11,7 @@ font_size = 32
 script = ExtResource("1_0kpcn")
 
 [node name="CollectibleTimer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 4.0
 
 [node name="StatusLabel" type="Label" parent="."]
 offset_right = 40.0
