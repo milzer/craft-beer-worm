@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b4gguym6bfr2r"]
+[gd_scene load_steps=5 format=3 uid="uid://b4gguym6bfr2r"]
 
 [ext_resource type="PackedScene" uid="uid://bfkq08yx1evak" path="res://scenes/collectibles/collectible.tscn" id="1_nc0bv"]
+[ext_resource type="AudioStream" uid="uid://d1oac4thwxhft" path="res://assets/nom1.ogg" id="2_ghh01"]
 [ext_resource type="Texture2D" uid="uid://4h4hixqber6b" path="res://assets/burger.png" id="2_qcnuk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bylgw"]
@@ -11,6 +12,7 @@ height = 56.0
 points = 1
 alcohol = -3
 grow = 1
+sounds = Array[AudioStream]([ExtResource("2_ghh01")])
 
 [node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("2_qcnuk")

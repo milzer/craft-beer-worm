@@ -1,7 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dq3khp4x2vj0r"]
+[gd_scene load_steps=11 format=3 uid="uid://dq3khp4x2vj0r"]
 
 [ext_resource type="PackedScene" uid="uid://bfkq08yx1evak" path="res://scenes/collectibles/collectible.tscn" id="1_e7blx"]
+[ext_resource type="AudioStream" uid="uid://ers1gx0w100r" path="res://assets/burp1.ogg" id="2_8svwr"]
 [ext_resource type="Texture2D" uid="uid://digxhkc78tbdi" path="res://assets/can.png" id="2_ifmav"]
+[ext_resource type="AudioStream" uid="uid://g2h4sbvo2162" path="res://assets/burp2.ogg" id="3_np21u"]
+[ext_resource type="AudioStream" uid="uid://baoyetvydvan6" path="res://assets/burp3.ogg" id="4_5a8ht"]
+[ext_resource type="AudioStream" uid="uid://ch006tvhq8vyl" path="res://assets/burp4.ogg" id="5_yn3o4"]
+[ext_resource type="AudioStream" uid="uid://6i2ea6rl3i3c" path="res://assets/burp5.ogg" id="6_tpyvf"]
+[ext_resource type="AudioStream" uid="uid://dm3ihwttkpo74" path="res://assets/can1.ogg" id="7_dqwej"]
+[ext_resource type="AudioStream" uid="uid://nn40rmahhhr6" path="res://assets/can2.ogg" id="8_4vv4r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lr73j"]
 size = Vector2(28, 48)
@@ -9,6 +16,7 @@ size = Vector2(28, 48)
 [node name="Collectible" instance=ExtResource("1_e7blx")]
 alcohol = 1
 grow = 1
+sounds = Array[AudioStream]([ExtResource("2_8svwr"), ExtResource("3_np21u"), ExtResource("4_5a8ht"), ExtResource("5_yn3o4"), ExtResource("6_tpyvf"), ExtResource("7_dqwej"), ExtResource("8_4vv4r")])
 
 [node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("2_ifmav")

@@ -1,7 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://csy2kp8cumjsq"]
+[gd_scene load_steps=9 format=3 uid="uid://csy2kp8cumjsq"]
 
 [ext_resource type="PackedScene" uid="uid://bfkq08yx1evak" path="res://scenes/collectibles/collectible.tscn" id="1_a1c5h"]
+[ext_resource type="AudioStream" uid="uid://ers1gx0w100r" path="res://assets/burp1.ogg" id="2_1q7nh"]
 [ext_resource type="Texture2D" uid="uid://bnx65nd1wwruo" path="res://assets/bottle.png" id="2_l46gl"]
+[ext_resource type="AudioStream" uid="uid://g2h4sbvo2162" path="res://assets/burp2.ogg" id="3_yhslg"]
+[ext_resource type="AudioStream" uid="uid://baoyetvydvan6" path="res://assets/burp3.ogg" id="4_eodsq"]
+[ext_resource type="AudioStream" uid="uid://ch006tvhq8vyl" path="res://assets/burp4.ogg" id="5_nex2n"]
+[ext_resource type="AudioStream" uid="uid://6i2ea6rl3i3c" path="res://assets/burp5.ogg" id="6_8qw7s"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_06rmn"]
 height = 64.0
@@ -10,6 +15,7 @@ height = 64.0
 points = 2
 alcohol = 1
 grow = 1
+sounds = Array[AudioStream]([ExtResource("2_1q7nh"), ExtResource("3_yhslg"), ExtResource("4_eodsq"), ExtResource("5_nex2n"), ExtResource("6_8qw7s")])
 
 [node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("2_l46gl")
